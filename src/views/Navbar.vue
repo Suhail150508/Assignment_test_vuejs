@@ -1,25 +1,16 @@
 
 <template>
-  <nav class=" container navbar navbar-expand-lg navbar-dark bg-dark " style="justify-content:space-around;"  >
-      <a class="navbar-brand" href="#" >Navbar</a>
-   
+  <nav class=" container navbar navbar-expand-lg   " style="display:flex;justify-content:space-between;"  >
     
-      <div class="collapse navbar-collapse " id="navbarSupportedContent" >
-        <ul class="navbar-nav mr-auto" style="margin-left:40rem;">
-          <li class="nav-item active">
-            <RouterLink class="nav-link" to="/" style="color:white">Home </RouterLink>
+    
+    <div class="collapse navbar-collapse text-dark " id="navbarSupportedContent" style="display: flex;justify-content:space-between;">
+        <a class="navbar-brand" href="#" >Home</a>
+        <ul class="navbar-nav mr-auto" >
+          <li class="nav-item">
+            <RouterLink class="nav-link" to='/login' style="font-size:1.2rem">Login</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/studentcreate"  style="color:white" >Create</RouterLink>
-          </li>
-          <li class="nav-item">
-            <RouterLink class="nav-link" to='/student/:id/edit' style="color:white">Edit</RouterLink>
-          </li>
-          <li class="nav-item">
-            <RouterLink class="nav-link" to='/login' style="color:white">Login</RouterLink>
-          </li>
-          <li class="nav-item">
-            <RouterLink class="nav-link" to='/resister' style="color:white">Resister</RouterLink>
+            <RouterLink class="nav-link" to='/resister' style="font-size:1.2rem">Resister</RouterLink>
           </li>
           
         </ul>
